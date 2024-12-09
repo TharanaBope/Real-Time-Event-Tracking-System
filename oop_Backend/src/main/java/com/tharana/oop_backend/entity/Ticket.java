@@ -26,4 +26,9 @@ public class Ticket {
     @ManyToOne
     @JoinColumn(name = "vendor_id", nullable = false)
     private Vendor vendor; // Reference to the vendor who added the ticket
+
+    @ManyToOne
+    @JoinColumn(name = "customer_id")
+    private Customer customer; // Customer who purchased the ticket
+
 }

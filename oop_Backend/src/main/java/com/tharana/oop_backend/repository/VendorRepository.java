@@ -1,4 +1,4 @@
-package com.tharana.oop_backend.Repository;
+package com.tharana.oop_backend.repository;
 
 import com.tharana.oop_backend.entity.Vendor;
 import org.springframework.data.jpa.repository.JpaRepository;
