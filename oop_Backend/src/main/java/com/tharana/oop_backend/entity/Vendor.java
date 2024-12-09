@@ -5,6 +5,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.List;
+
 @Entity
 @Data
 @NoArgsConstructor
@@ -16,8 +18,6 @@ public class Vendor {
     private int vendorId;
 
     private String name;
-
-    private String contactInfo;
 
     @OneToMany(mappedBy = "vendor", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<Ticket> addedTickets; // List of tickets added by the vendor

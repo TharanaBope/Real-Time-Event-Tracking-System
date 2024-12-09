@@ -1,5 +1,6 @@
 package com.tharana.oop_backend.entity;
 
+import com.tharana.oop_backend.util.enums.TicketStatus;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
