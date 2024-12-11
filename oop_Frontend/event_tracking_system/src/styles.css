@@ -1,0 +1,203 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Align at the top */
+  }
+  
+  .container {
+    width: 95%;
+    max-width: 1100px;
+    min-width: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  /* Header */
+  .welcome-header {
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+  }
+  
+  /* Main Content */
+  .main {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 1rem;
+    align-items: start;
+    height: auto;
+  }
+  
+  /* Card Styles */
+  .card {
+    background: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .parameter-card, .status-activity-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  /* System Configuration Card */
+  .parameter-card {
+    margin: 0;
+    padding: 1rem;
+    
+  }
+  
+  .parameter-card label {
+    font-weight: bold;
+    margin-bottom: 0.4rem;
+    display: block;
+  }
+  
+  .parameter-card input {
+    width: calc(100% - 1rem);;
+    padding: 0.4rem;
+    margin-bottom: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .parameter-card button {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+  }
+  
+  .btn {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .btn.start {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .btn.stop {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  /* Status Grid */
+  .status-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .status-item {
+    background-color: #f9f9f9;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Text Styling for Status Item */
+  .status-item h3 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .status-item p {
+    font-size: 1.2rem; /* Larger text for numbers */
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  /* Activity Log */
+  .activity-card {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 1rem;
+  }
+  
+  .activity-card .log-entries {
+    background-color: #fafafa;
+    border-radius: 5px;
+    padding: 1rem;
+    height: auto;
+    overflow-y: auto;
+    max-height: 400px;
+  }
+  
+  /* Status & Activity Card */
+  .status-activity-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align content to the top */
+    padding: 1rem;
+    margin-top: 0;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Title Styling */
+  .status-activity-card h2 {
+    font-size: 1.5rem; /* Make title slightly larger */
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  /* Status Grid */
+  .status-grid-horizontal {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four equal columns */
+    gap: 1rem; /* Space between status cards */
+    margin-top: 1rem;
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    .main {
+      grid-template-columns: 1fr;
+    }
+    .welcome-header {
+      font-size: 1.2rem;
+    }
+  }
+  
+  input[type="number"] {
+    -moz-appearance: textfield; /* For Firefox */
+    -webkit-appearance: none; /* For Chrome, Safari, Edge */
+    appearance: none; /* Standard property */
+  }
+  
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none; /* Remove Chrome/Safari spinner */
+    margin: 0;
+  }
+  
