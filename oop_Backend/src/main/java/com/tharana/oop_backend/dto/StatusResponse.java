@@ -1,5 +1,5 @@
 package com.tharana.oop_backend.dto;
-
+// Response class for status operations
 public class StatusResponse {
 
     private boolean isRunning;

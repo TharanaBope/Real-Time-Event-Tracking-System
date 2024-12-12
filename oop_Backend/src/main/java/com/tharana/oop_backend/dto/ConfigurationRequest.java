@@ -1,5 +1,5 @@
 package com.tharana.oop_backend.dto;
-
+// Request class for configuration operations
 public class ConfigurationRequest {
 
     private int totalTickets;

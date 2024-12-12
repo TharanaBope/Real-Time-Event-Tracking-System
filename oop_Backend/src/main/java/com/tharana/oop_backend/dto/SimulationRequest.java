@@ -1,4 +1,5 @@
 package com.tharana.oop_backend.dto;
+// Request class for simulation operations
 public class SimulationRequest {
     private int totalTickets;
     private int ticketReleaseRate;

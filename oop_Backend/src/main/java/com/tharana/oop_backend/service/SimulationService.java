@@ -6,14 +6,14 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
-
+// Service class for simulation operations
 @Service
 public class SimulationService {
 
     private final TicketPool ticketPool = new TicketPool();
     private final List<String> activityLogs = new ArrayList<>();
     private boolean isRunning = false;
-
+// Start the simulation
     public String startSimulation(int totalTickets, int ticketReleaseRate, int customerRetrievalRate, int maxTicketCapacity) {
         // Initialize the simulation
         isRunning = true;
@@ -54,7 +54,7 @@ public class SimulationService {
 
         return "Simulation started";
     }
-
+// Stop the simula
     public void stopSimulation() {
         // Stop the simulation
         isRunning = false;

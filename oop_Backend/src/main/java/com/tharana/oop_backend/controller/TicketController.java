@@ -5,13 +5,13 @@ import com.tharana.oop_backend.repository.TicketRepository;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
+// Controller class for ticket operations
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
 
 @RestController
-@RequestMapping("/api/tickets")
+@RequestMapping("/api/tickets")// This class is a REST controller and all the endpoints are prefixed with /api/tickets
 public class TicketController {
 
     private final TicketRepository ticketRepository;

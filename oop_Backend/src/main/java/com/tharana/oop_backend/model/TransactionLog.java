@@ -5,7 +5,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import java.time.LocalDateTime;
-
+// Model class for transaction log
 @Entity
 public class TransactionLog {
 
@@ -18,7 +18,7 @@ public class TransactionLog {
     public TransactionLog() {
     }
 
-    public TransactionLog(String details, LocalDateTime timestamp) {
+    public TransactionLog(String details, LocalDateTime timestamp) {// Constructor for transaction log
         this.details = details;
         this.timestamp = timestamp;
     }

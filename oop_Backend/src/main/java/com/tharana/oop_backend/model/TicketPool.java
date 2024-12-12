@@ -2,7 +2,7 @@ package com.tharana.oop_backend.model;
 
 import java.util.LinkedList;
 import java.util.Queue;
-
+// Ticket pool class
 public class TicketPool {
 
     private final Queue<Ticket> tickets = new LinkedList<>();

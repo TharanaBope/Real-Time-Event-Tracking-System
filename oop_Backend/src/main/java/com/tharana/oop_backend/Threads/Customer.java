@@ -2,7 +2,7 @@ package com.tharana.oop_backend.Threads;
 
 import com.tharana.oop_backend.model.Ticket;
 import com.tharana.oop_backend.model.TicketPool;
-
+// Customer class that buys tickets from the ticket pool
 public class Customer implements Runnable {
     private final TicketPool ticketPool;
 
@@ -11,7 +11,7 @@ public class Customer implements Runnable {
     }
 
     @Override
-    public void run() {
+    public void run() { // Buy tickets from the ticket pool
         while (true) {
             Ticket ticket = ticketPool.retrieveTicket();
             if (ticket != null) {

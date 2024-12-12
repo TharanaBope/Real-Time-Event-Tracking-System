@@ -1,7 +1,7 @@
 package com.tharana.oop_backend.service;
 
 import org.springframework.stereotype.Service;
-
+// Service class for thread management
 @Service
 public class ThreadManagementService {
 

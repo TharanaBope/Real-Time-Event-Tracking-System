@@ -1,7 +1,7 @@
 package com.tharana.oop_backend.model;
 
 import javax.persistence.*;
-
+// Model class for ticket
 @Entity
 public class Ticket {
     @Id
