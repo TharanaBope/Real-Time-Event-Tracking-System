@@ -1,7 +1,7 @@
 package com.tharana.oop_backend.Threads;
 
-import com.eventticketing.event_ticketing_system.model.Ticket;
-import com.eventticketing.event_ticketing_system.model.TicketPool;
+import com.tharana.oop_backend.model.Ticket;
+import com.tharana.oop_backend.model.TicketPool;
 
 public class Customer implements Runnable {
     private final TicketPool ticketPool;
