@@ -1,7 +1,7 @@
 package com.tharana.oop_backend.controller;
 
-import com.eventticketing.event_ticketing_system.dto.SimulationRequest;
-import com.eventticketing.event_ticketing_system.service.SimulationService;
+import com.tharana.oop_backend.dto.SimulationRequest;
+import com.tharana.oop_backend.service.SimulationService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

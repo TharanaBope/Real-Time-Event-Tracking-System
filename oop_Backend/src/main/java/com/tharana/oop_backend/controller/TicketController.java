@@ -1,7 +1,7 @@
 package com.tharana.oop_backend.controller;
 
-import com.eventticketing.event_ticketing_system.model.Ticket;
-import com.eventticketing.event_ticketing_system.repository.TicketRepository;
+import com.tharana.oop_backend.model.Ticket;
+import com.tharana.oop_backend.repository.TicketRepository;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

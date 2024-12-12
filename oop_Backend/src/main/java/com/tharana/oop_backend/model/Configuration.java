@@ -1,7 +1,5 @@
 package com.tharana.oop_backend.model;
 
-package com.eventticketing.event_ticketing_system.model;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
