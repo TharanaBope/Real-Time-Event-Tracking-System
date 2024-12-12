@@ -202,9 +202,9 @@ This project is licensed under the [MIT License](LICENSE). Feel free to use, mod
 ## Contact
 
 For any queries or contributions, reach out to:
-- **Project Owner**: Your Name
-- **Email**: your.email@example.com
-- **GitHub**: [your-github-profile](https://github.com/your-github-profile)
+- **Project Owner**: Tharana Bopearachchi
+- **Email**: tharanabope30@gmail.com
+- **GitHub**: [your-github-profile]([https://github.com/your-github-profile](https://github.com/TharanaBope))
 
 ---
 
