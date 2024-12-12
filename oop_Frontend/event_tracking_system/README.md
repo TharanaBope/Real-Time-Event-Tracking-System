@@ -5,7 +5,7 @@ This is the frontend application for the Event Tracking System, implemented usin
 
 ## Features
 
-- Responsive and intuitive UI.
+- Responsive vand intuitive UI.
 - Modular and component-based architecture.
 - Built with Vite for fast development and optimized production builds.
 - Integration with the backend API for seamless data interaction.
