@@ -1,73 +1,37 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-const SystemConfig = ({ onStartStop, systemStatus }) => {
-  const [config, setConfig] = useState({
-    totalTickets: '',
-    releaseRate: '',
-    retrievalRate: '',
-    maxCapacity: '',
-    vendors: '',
-    customers: '',
-  });
-
-  const handleInputChange = (e) => {
-    setConfig({ ...config, [e.target.name]: e.target.value });
-  };
-
-  const handleButtonClick = () => {
-    onStartStop();
-  };
-
+const SystemConfig = ({ systemStatus, onStart, onStop, onReset, isStopped }) => {
   return (
     <div className="parameter-card card">
+      {/* Form inputs */}
       <label>Total Tickets</label>
-      <input
-        type="number"
-        name="totalTickets"
-        value={config.totalTickets}
-        onChange={handleInputChange}
-      />
+      <input type="number" placeholder="Enter total tickets" />
       <label>Release Rate</label>
-      <input
-        type="number"
-        name="releaseRate"
-        value={config.releaseRate}
-        onChange={handleInputChange}
-      />
+      <input type="number" placeholder="Enter release rate" />
       <label>Retrieval Rate</label>
-      <input
-        type="number"
-        name="retrievalRate"
-        value={config.retrievalRate}
-        onChange={handleInputChange}
-      />
+      <input type="number" placeholder="Enter retrieval rate" />
       <label>Max Capacity</label>
-      <input
-        type="number"
-        name="maxCapacity"
-        value={config.maxCapacity}
-        onChange={handleInputChange}
-      />
+      <input type="number" placeholder="Enter max capacity" />
       <label>Vendors</label>
-      <input
-        type="number"
-        name="vendors"
-        value={config.vendors}
-        onChange={handleInputChange}
-      />
+      <input type="number" placeholder="Enter vendors" />
       <label>Customers</label>
-      <input
-        type="number"
-        name="customers"
-        value={config.customers}
-        onChange={handleInputChange}
-      />
-      <button
-        className={`btn ${systemStatus === 'STOPPED' ? 'stop' : 'start'}`}
-        onClick={handleButtonClick}
-      >
-        {systemStatus === 'STOPPED' ? 'Reset' : 'Start System'}
+      <input type="number" placeholder="Enter customers" />
+
+      {/* START button (always visible) */}
+      <button className="btn start" onClick={onStart}>
+        START
       </button>
+
+      {/* STOP or RESET button */}
+      {isStopped ? (
+        <button className="btn stop" onClick={onReset}>
+          RESET
+        </button>
+      ) : (
+        <button className="btn stop" onClick={onStop}>
+          STOP
+        </button>
+      )}
     </div>
   );
 };

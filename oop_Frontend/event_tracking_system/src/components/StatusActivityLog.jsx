@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 const StatusActivityLog = ({ systemStatus, logs }) => {
   return (
     <div className="status-activity-card card">
+      {/* Status Grid */}
       <div className="status-grid-horizontal">
         <div className="status-item">
           <h3>System Status</h3>
@@ -23,6 +24,8 @@ const StatusActivityLog = ({ systemStatus, logs }) => {
           <p>0</p>
         </div>
       </div>
+
+      {/* Activity Log */}
       <div className="activity-card">
         <h2>Activity Log</h2>
         <div className="log-entries">
