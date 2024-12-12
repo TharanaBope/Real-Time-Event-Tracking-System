@@ -2,5 +2,6 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/oop_CLI/Real-Time-Event-Tracking-System-CLI" vcs="Git" />
   </component>
 </project>
